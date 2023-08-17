@@ -33,6 +33,7 @@ pipeline {
         	sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
           sh 'docker push mauriceokoth/hello-world:latest'
         }
+        }
       }
     }
 }
